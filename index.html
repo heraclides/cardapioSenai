@@ -1,0 +1,294 @@
+<<!DOCTYPE html>
+<html lang="pt-BR
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify- js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link href="https://fonts.cdnfonts.com/css/eau" rel="stylesheet">
+    <title>Projeto Bolinho de chuva</title>
+</head>
+<body>
+    
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center ">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/senai-logo-1.png"
+             alt="Logo DevBurguer"
+             class="w-60 h-32  shadow-lg hover:scale-110 duration-200">
+
+             <h1 class="text-4xl mt-4 mb-2 font-bold text-blue-700">
+                Senai Gama - Front-End</h1>
+
+            <span class="text-black font-medium">Eq 2 8 (St. Sul), Brasília, DF, 72415-020 1 km</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span id="hours" class="text-blue-700 font-medium">Seg á Sex - 08:00 as 12:00</span>
+            </div>
+            <div id="hours-form">
+                <label class="text-blue-900" for="open-time">Horário de Abertura:</label>
+                <input type="time" id="open-time" value="18:00">
+                
+                <label class="text-blue-900" for="close-time">Horário de Fechamento:</label>
+                <input type="time" id="close-time" value="22:00">
+                
+                <button id="set-hours" class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg">Salvar Horários</button>
+            </div>
+        </div>
+    </header>
+    <!--FIM HEADER-->
+
+    <h2 class="text-2x1 md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça os melhores Bolinho de chuva
+    </h2>
+
+    <!--INICIO MENU-->
+    <div id="menu">
+        <main class="grid grid-cols-l md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!--Produto item-->
+            <div class="flex gap-2">
+                <img src="./assets/bc-1.jpg"
+                 alt="Hamburguer Smash"
+                 class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                 <div>
+                    <p class="font-bold">Bolinho de chuva com cachaça kilo</p>
+                    <p class="text-sm">Lembra a casa da avó, as tardes de filmes, aquela chuvinha caindo lá fora...
+                        mas e a Cachaça?</p>
+                    <p class="text-sm">Ela faz toda a diferença, deixa o bolinho macio e leve pois evita que o óleo encharque o bolinho.</p>
+                    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$18.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Hamburguer Smash"
+                    data-price="18.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+            <div class="flex gap-2">
+                <img src="./assets/bc-1.jpg"
+                 alt="Hamburguer Smash"
+                 class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                 <div>
+                    <p class="font-bold">Bolinho de chuva com cachaça unidade</p>
+                    <p class="text-sm">Lembra a casa da avó, as tardes de filmes, aquela chuvinha caindo lá fora...
+                        mas e a Cachaça?</p>
+                    <p class="text-sm">Ela faz toda a diferença, deixa o bolinho macio e leve pois evita que o óleo encharque o bolinho.</p>
+                    
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$3,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Hamburguer Smash"
+                    data-price="3.50"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!--Fim produto item-->
+
+                 <!--Produto item-->
+                 <div class="flex gap-2">
+                    <img src="./assets/bc 2.jpg"
+                     alt="Hamburguer Salad"
+                     class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+    
+                     <div>
+                        <p class="font-bold">Bolinho recheado com doce de leite</p>
+                        <p class="text-sm">Bolinho de chuva macio e saboroso recheado com delicioso doce de leite caseiro</p>
+                     
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 4,50</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer Salad"
+                        data-price="4.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                <!--Fim produto item-->
+
+                   <!--Produto item-->
+                   <div class="flex gap-2">
+                    <img src="./assets/bc 3.jpg"
+                     alt="Hamburguer da casa"
+                     class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+    
+                     <div>
+                        <p class="font-bold">Bolinho de Chuva Tradicional</p>
+                        <p class="text-sm">Bolinho de chuva é uma especialidade típica tanto em Portugal como no Brasil. É feito de farinha de trigo, ovos, leite e fermento químico ou bicarbonato de sódio.</p>
+                     
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$2,50</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hamburguer da casa"
+                        data-price="2.50"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                <!--Fim produto item-->
+            </main>
+            <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+      id="cart-receita">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Bolinho de Chuva</h2>
+            <p class="font-bold  text-center">ingredientes 30 Porções</p>
+            <div class="grid grid-cols-2">
+                <p class="font-bold mt-4">400g farinha de trigo</p>
+                <p class="font-bold mt-4">01 xícara de Leite</p>
+                <p class="font-bold mt-4">1/2 xícara de açúcar</p>
+                <p class="font-bold mt-4">01 ovo</p>
+                <p class="font-bold mt-4">Essência de baunilha ou coco</p>
+                <p class="font-bold mt-4">01 colher de fermento em pó</p>
+                <p class="font-bold mt-4">Açúcar e canela para povilhar</p>
+                <p class="font-bold mt-4">Óleo para fritar</p>
+            </div> 
+            
+            <p class="font-bold mt-4 text-center">Modo de Preparo</p>
+            <p class="font-bold mt-4 ">1 - Misture tudo numa vasilha, até ficar bem homogênea</p>
+            <p class="font-bold mt-4 ">2 - Aqueça o óleo numa panela pequena, de modo que o óleo fique com 3 dedos de altura na panela.</p>
+            <p class="font-bold mt-4 ">3 - Quando o óleo estiver quente (fogo médio), coloque em colheradas a massa nesse óleo</p>
+            <p class="font-bold mt-4 ">4 - Doure nos dois lados, escorra num papel toalha, polvilhe com açúcar e canela.</p>
+            <p class="font-bold mt-4 ">5 - Dica: brinque com as crianças para descobrir qual desenho se formou, elas adoram.</p>
+            <p class="font-bold mt-4 ">6 - Pode-se usar a essência de sua preferência ou não coloque essência nenhuma, também fica uma delícia e sequinhas, não fica gordurosas.</p>
+            <p class="font-bold mt-4 ">7 - Para a massa não ficar encharcada de óleo, se ela estiver muito mole coloque mas farinha de trigo.</p>
+            
+           
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+            </div>
+            
+        </div>
+    </div> 
+
+            <div class="w-full flex justify-center my-5 ">
+                <button class="bg-green-600 px-4 py-1 rounded-lg mt-5 text-white" id="btn-receita" >Receita Bolinho de chuva Tradicional</button>
+            </div>
+
+         
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+        <!--GRID BEBIDAS-->
+        <div class="grid grid-cols-l md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+
+               <!--Bebida item-->
+               <div class="flex gap-2 w-full">
+                <img src="./assets/refri-1.png"
+                 alt="Coca lata"
+                 class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+
+                 <div class="w-full">
+                    <p class="font-bold">Coca lata</p>
+                    
+                 
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$6</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Coca lata"
+                    data-price="6"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+                <!--FIM Bebida item-->
+
+                <!--Bebida item-->
+                <div class="flex gap-2 w-full">
+                    <img src="./assets/refri-2.png"
+                     alt="Guaraná lata"
+                     class="w-28 h-28 rounded-md hover:scale-110 hover: -rotate-2 duration-300">
+    
+                     <div class="w-full">
+                        <p class="font-bold">Guaraná lata</p>
+                        
+                     
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$6</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Guaraná lata"
+                        data-price="6"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                    <!--FIM Bebida item-->
+        </div>
+         <!-- FIM GRID BEBIDAS-->
+
+    </div>
+
+    <!--FIM MENU-->
+
+    <!-- MODAL CART-->
+     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+      id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega</p>
+            <input type="text"
+            placeholder="Digite seu Endereço completo"
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            >
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo</p>
+
+            <p class="font-bold mt-4">Digite seu Whatsapp</p>
+            <input type="tel"
+            placeholder="61999999999 (DDD+Número)"
+            id="zap"
+            class="w-full border-2 p-1 rounded my-1"
+            >
+            <p class="text-red-500 hidden" id="zap-warn">Digite seu Whatsapp corretamente</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+            
+        </div>
+    </div> 
+
+    <!--FIM MODAL CART -->
+
+    <!--BUTTON CART FOOTER-->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+           <span>QTD Produtos: (<span id="cart-count">0</span>) Itens: (<span id="itens-count">0</span>)</span> 
+                Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+        <!--FIM BUTTON CART FOOTER-->
+</body>
+</html>
